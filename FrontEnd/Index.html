@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASICS OF HTML</title>
+</head>
+<body>
+    <h1>WELCOME TO HTML TAGS</h1>
+    <h6>HYPERTEXT MARKUP LANGUAGE</h6>
+    <hr>
+    <pre>Hi all,
+
+        Welcome to DOTNET FULL STACK Training
+        Hope you all enjoy the session.
+
+        Thanks & Regards
+        xyz
+    </pre>
+    <!--Block level element-->
+    <p style="background-color: beige;">Lorem <b>ipsum dolor sit amet</b>, <i>consectetur</i> adipisicing elit. <mark>Consequatur accusantium</mark> soluta consequuntur quibusdam fugit dolorum, porro praesentium aut excepturi eius beatae quaerat cupiditate itaque perferendis aliquid minus velit possimus reprehenderit.</p>
+    <p>x<sub>2</sub></p>
+    <p>x<sup>2</sup></p>
+    <!--Inline level element-->
+    <span style="background-color: beige;">Hello</span>
+    <br>
+    <!--Links in HTML-->
+    <!--Navigation-->
+    <a href="https://www.google.com/" target="_blank" title="Google Search engine">Google</a>
+    <br>
+    <!--image tag-->
+    <img src="assets/IMG1.jpg" height="200px" width="200px" alt="HTML">
+    <br>
+    <!--EMOJIES-->
+    &#128512;&#128516;
+    <!--LISTS-->
+    <!--ordered,unordered,definition list-->
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <br>
+    <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <ol>
+        <ul>
+            <li><a href="assets/IMG1.jpg">HTML</a></li>
+        </ul>
+        <ul>
+            <li><a href="assets/img2.jpg">CSS</a></li>
+        </ul>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+    </dl>
+    <dl>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+    <!--Entities-->
+    &lt;div id=&quot;character&quot;&gt;
+    <br>
+    <!--audio tag-->
+    <audio controls autoplay muted>
+        <source src="assets/SampleAudio.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <!--video tag-->
+    <video width="800px" controls poster="assets/IMG1.jpg">
+        <source src="assets/SampleVideo.mp4" type="video/mp4">
+    </video>
+    <!--iframes-->
+    <!--embed another document in the current document-iframes-->
+    <iframe src="assets/Tables.html" height="400px" width="400px"></iframe>
+    <br>
+    <iframe src="https://www.dlithe.com" height="400px" width="400px"></iframe>
+    <br>
+    <iframe src="assets/Tables.html" height="400px" width="400px" name="google"></iframe>
+    <br>
+    <a href="https://www.google.com/webhp?igu=1" target="google" title="Google Search engine">Google</a>
+
+<!--TABLES-->
+<table border="1">
+    <caption>Trainee Details</caption>
+    <thead>
+        <tr><th>TID</th><th>TName</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>100</td><td>John</td></tr>
+        <tr><td>101</td><td>Sam</td></tr>
+        <tr><td>102</td><td>Peter</td></tr>
+        <tr><td>103</td><td>Jancy</td></tr>
+        <tr><td>104</td><td>Nancy</td></tr>
+        <tr><td>105</td><td>Jack</td></tr>
+    </tbody>
+</table>
+
+<!--colspan in tables-->
+<table border="1">
+    <tr><th>ID</th><th>Name</th><th colspan="2">Mobile</th></tr>
+    <tr><td>100</td><td>John</td><td>945983649</td><td>945983649</td></tr>
+    <tr><td>101</td><td>Peter</td><td>945983649</td></tr>
+    <tr><td>102</td><td>Jancy</td><td>945983649</td><td>945983649</td></tr>
+
+</table>
+
+<!--tables with rowspan-->
+<table border="1">
+    <tr><th>ID</th><td>100</td><td>101</td></tr>
+    <tr><th rowspan="2">Mobile</th><td>987654783</td><td>987654783</td></tr>
+    <tr><td>9637546728</td><td>987654783</td></tr>
+</table>
+</body>
+</html>
+

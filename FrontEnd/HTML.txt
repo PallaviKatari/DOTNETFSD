@@ -1,0 +1,21 @@
+HTML-HYPERTEXT MARKUP LANGUAGE <>
+HTML-WEB DESIGNING
+2PARTS
+---------
+HEAD-TITLE,SCRIPTS,CSS,META ETC
+BODY- HEADING,ANCHOR,LIST,IMAGE ETC
+
+<p>
+<pre>
+<span>
+<ol type=""><li>
+<ul><li><a>
+<dl><dt><dd>
+<a href="" target="_blank"> 
+<img src="" alt="">
+<audio>
+<video>
+<iframe>
+entities
+emojies
+<table>
