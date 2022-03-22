@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+</head>
+<body>
+    <!--mail to in <a>-->
+    <a href="mailto:abc@gmail.com">Send Mail</a>
+    <!--address-->
+    <address>
+        XYZ Technologies<br>
+        abc street<br>
+        Bangalore
+    </address>
+    <!--bdo-->
+    <bdo>
+        Hello-Left to Right
+    </bdo>
+    <br>
+    <bdo dir="rtl">
+        Hello-Right to Left
+    </bdo>
+    <!--Semantic elements->clearly describe the purpose of the tag and content to the user when rendered in the browser-->
+    <!--semantic-tables,link,form,section,article-->
+    <!--section-->
+    <section>
+        <h2>WELCOME TO SECTION 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius velit veritatis totam eaque et at, distinctio quam quaerat facilis rem molestias debitis ab magni odit illo accusamus blanditiis. Libero!</p>
+    </section>
+
+    <!--Article-->
+    <article>
+        <h2>WELCOME TO ARTICLE 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius velit veritatis totam eaque et at, distinctio quam quaerat facilis rem molestias debitis ab magni odit illo accusamus blanditiis. Libero!</p>
+    </article>
+
+    <!--Figure and Figure caption-->
+    <figure>
+        <img src="assets/img2.jpg" alt="css" height="400px" width="400px">
+        <figcaption style="text-align:center">Cascading Style Sheet</figcaption>
+    </figure>
+
+    <!--ImageMap-->
+    <img src="assets/img2.jpg" alt="css" height="400px" width="400px" usemap="#css">
+
+    <map name="css">
+        <area shape="rect" coords="160,160,870,470" alt="css" href="assets/img2.jpg">
+        <area shape="rect" coords="500,450,640,520" alt="css1" href="assets/img3.jpg">
+    </map>
+
+    <img src="assets/workplace.jpg" alt="css" height="400px" width="400px" usemap="#wp">
+
+    <map name="wp">
+        <area shape="rect" coords="30,45,270,350" alt="css" href="assets/img2.jpg">
+        <area shape="rect" coords="280,170,340,250" alt="css1" href="assets/img3.jpg">
+    </map>
+    <!--HEADER AND FOOTER-->
+    <header>
+        Main content in the page
+    </header>
+    <footer>
+        Know more about the website links,enquiry details etc
+    </footer>
+
+    
+</body>
+</html>

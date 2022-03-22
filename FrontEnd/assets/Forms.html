@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form action="" method="Post">
+        <fieldset>
+            <legend>
+                Trainee Details
+            </legend>
+            <label>UserName</label><br>
+            <input type="text" name="uname" required><br>
+            <label>User Email</label><br>
+            <input type="email" name="email" required><br>
+            <label>User Password</label><br>
+            <input type="password" name="password" required><br>
+            <label>Gender</label><br>
+            <input type="radio" id="gender" name="gender" value="Female">Female<br>
+            <input type="radio" id="gender" name="gender" value="Male">Male<br>
+            <label>Address</label><br>
+            <textarea></textarea><br>
+            <label>Select Course</label><br>
+            <select name="course">
+                <optgroup label="WEBUI">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                </optgroup>
+                <optgroup label="DATABASE">
+                    <option>SQL</option>
+                    <option>ORACLE</option>
+                </optgroup>                
+            </select><br><br>
+            <br>
+            <input type="submit" value="Register">       
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <form>
+        <input type="date">Select Date<br><br>
+        <input type="datetime-local">Select Date and Time<br><br>
+        <label>Select courses</label><br>
+        <input type="checkbox" value="HTML"><label>HTML</label><br>
+        <input type="checkbox" value="CSS"><label>CSS</label><br>
+        <input type="checkbox" value="JS"><label>Javascript</label><br><br>
+
+        <label>Mobile Number</label>
+        <input type="tel" pattern="[0-5]{10}" required>
+        <br>
+        <br>
+        <label>Telephone Number</label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
