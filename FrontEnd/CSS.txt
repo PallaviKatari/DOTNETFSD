@@ -1,0 +1,15 @@
+CSS-CASCADING STYLE SHEET
+
+CSS TYPES
+----------
+INLINE - <p style="">
+INTERNAL - <style></style> 
+EXTERNAL - .css(contain only styling no html) - reusability
+
+CSS SELECTORS
+--------------
+ID
+CLASS
+ELEMENT
+GROUPING
+UNIVERSAL

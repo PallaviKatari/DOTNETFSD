@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        body
+        {
+            background-image: url("assets/IMG1.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        p::first-letter
+        {
+            color: red;
+            font-size: large;
+        }  
+        p::first-line
+        { 
+            background-color: aqua;
+        }
+        ::marker
+        {
+            color:blueviolet;
+        }
+        ::selection
+        {
+            color:crimson;
+            background-color: bisque;
+        }
+        h3::before
+        {
+            content: url("assets/img6.jpg");
+        }
+        h3::after
+        {
+            content: url("assets/img6.jpg");
+        }
+    </style>
+</head>
+<body>
+    <h3 style="background-color:bisque;text-align:center">Welcome to Pseudo Elements</h3>
+    <hr>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quidem ipsa facere sed id, assumenda eum sint enim. Asperiores fugit saepe, accusamus dolore quaerat tenetur similique. Voluptatibus perspiciatis deserunt optio.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nobis labore repellendus deserunt voluptates sapiente aliquam veritatis, eligendi perferendis voluptatibus, fuga non, accusamus minima ducimus veniam harum perspiciatis facere? Sint!</p>
+    <hr>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    
+</body>
+</html>
