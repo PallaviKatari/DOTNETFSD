@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effects</title>
+    <style>
+        .demo
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px dashed red;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        .demo1
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px dashed red;
+            overflow: hidden;
+            text-overflow:ellipsis;
+
+        }
+        .demo2
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px dashed red;
+            overflow:visible;
+            
+        }
+        .demo3
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px dashed rgb(89, 0, 255);
+            text-overflow:clip;
+            overflow: hidden;
+        }
+        .demo3:hover
+        {
+            overflow: visible;
+            width:300px;
+            border: 2px dotted red;
+        }
+        .demo4
+        {
+            width:200px;
+            word-break:keep-all;
+            border:solid 1px black;
+        }
+        .demo5
+        {
+            width:200px;
+            word-wrap: break-word;
+            border:solid 1px black;
+        }
+        .demo6
+        {
+            writing-mode: vertical-rl;
+        }
+        .pagination a
+        {
+            color:red;
+            font-size: 25px;
+            float:left;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .pagination
+        {
+            position:fixed;
+            display:inline-block;
+        }
+        .demo7
+        {
+            position:static;
+            left:20px;
+        }
+        .demo8
+        {
+            position:relative;
+            left:120px;
+        }
+        .demo9
+        {
+            position:fixed;
+            left:120px;
+        }
+        .demo10
+        {
+            top: 40px;;
+            position:sticky;
+        }
+        .demo11
+        {
+            position:absolute;
+            top:100px;
+            left:200px;
+            border:dotted red 2px;
+            width: 100px;
+            height: 20px;
+            word-wrap: break-word;
+        }
+        .demo12
+        {
+            position:absolute;
+            top:100px;
+            left:200px;
+            border:dotted red 2px;
+            width: 100px;
+            height: 20px;
+            word-wrap: break-word;
+        }
+        .relative
+        {
+            height: 200px;
+            width:500px;
+            border-style: dashed;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!--Pagination in HTML-->
+    <div class="pagination">
+        <a href="assets/IMG1.jpg">&laquo;</a>
+        <a href="assets/img2.jpg">CSS</a>
+        <a href="assets/img3.jpg">JS</a>
+        <a href="assets/img4.jpg">JQUERY</a>
+        <a href="assets/img5.jpg">SQL</a>
+        <a href="assets/img6.jpg">&raquo;</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p class="demo10">Position Types:Absolute,Relative,Static,Fixed,Sticky</p>
+    <p class="demo">Welcome to HTML and CSS Training</p>
+    <p class="demo1">Welcome to HTML and CSS Training</p>
+    <p class="demo2">Welcome to HTML and CSS Training</p>
+    <p class="demo3">Welcome to HTML and CSS Training</p>
+    <hr>
+    <p class="demo4">Welcome to HTML and CSS Training</p>
+    <p class="demo5">Welcome to HTML and CSS Training</p>
+    <p class="demo6">Welcome to HTML and CSS Training</p>
+    <br>
+    <!--Position Types-->
+    <!--Absolute,Relative,Static,Fixed,Sticky-->
+    <p class="demo7">Position Types:Absolute,Relative,Static,Fixed,Sticky</p>
+    <p class="demo8">Position Types:Absolute,Relative,Static,Fixed,Sticky</p>
+    <p class="demo9">Position Types:Absolute,Relative,Static,Fixed,Sticky</p>
+    <p class="demo11">ABSOLUTE</p>
+    <div class="relative">
+        <p class="demo12">ABSOLUTE</p>
+    </div>   
+</body>
+</html>
