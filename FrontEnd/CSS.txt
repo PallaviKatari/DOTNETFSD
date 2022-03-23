@@ -13,3 +13,7 @@ CLASS
 ELEMENT
 GROUPING
 UNIVERSAL
+
+Pseudo elements
+Image map
+Semantics

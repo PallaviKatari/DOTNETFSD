@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Concepts</title>
+    <style>
+        body
+        {
+            background: #ef32d9;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        p.demo
+        {
+            border-style: double;
+            border-width: 5px;
+            border-color: aqua;
+            border-radius: 15px; 
+            text-shadow: 3px 4px 2px  red, 5px 6px 2px blue;
+        }
+        p.demo1
+        {
+            border-style: dotted;
+            border-width: 2px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 2px yellow, 4px 5px 2px blue;
+            opacity: 1;
+            background-color: #ef32d9;           
+        }
+        p.demo2
+        {
+            border-style: groove dotted;
+            border-radius: 10px 5px;
+            border-color: red blue;
+        }
+        p.demo3
+        {
+            border-color: blue red green;
+            border-style: dotted solid dashed;
+        }
+
+        p.demo4
+        {
+            border-style: dotted dashed inset outset;
+            border-color: green yellow red blue;
+            outline-style: double;
+            outline-width: 2px;
+            outline-offset: 3px;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Border and Outline style-->
+    <p class="demo">Hello</p>
+    <p class="demo1">Hello</p>
+    <p class="demo2">Hello</p>
+    <p class="demo3">Hello</p>
+    <p class="demo4">Hello</p>
+    <p>Hello</p>   
+</body>
+</html>
