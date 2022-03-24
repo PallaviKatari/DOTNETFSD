@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+       /* div.ani
+        {
+            height:100px;
+            width:100px;
+            border-style: solid;
+            background-color: aqua;
+            position:relative;
+            animation-name:demo;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 3s;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+        }
+        @keyframes demo
+        {
+            0%{background-color: blueviolet;left:50px;top:50px;border-radius: 10px;}
+            25%{background-image: url(assets/img6.jpg);left:300px;top:300px;border-color: chartreuse;border-width: 10px;}
+            50%{background-color: aquamarine;left:100px;top:100px;}
+            100%{background-color: red;left:100px;top:100px;}
+
+        }*/
+        .transform
+        {
+            /*scalex,skewy,skewx,scaley,translatex,translatey*/
+            transform:matrix(1,0,1,1,25,30);
+            position:relative;
+            left:150px; 
+            width:100px;
+            transition: width 1s; 
+            transition-timing-function: ease; 
+        }
+        .transform:hover
+        {
+                width:200px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="ani"></div>-->
+    <div class="transform" style="top:400px;border-style: dashed;background-color: beige;height: 100px;"></div>
+
+    
+</body>
+</html>
