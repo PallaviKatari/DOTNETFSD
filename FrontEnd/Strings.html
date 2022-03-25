@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Concepts</title>    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var str1="Hello!";
+        var str2=" Trainees";
+        var str3= "Welcome to \"Javascript\" string concepts"
+        var str4="Javascript programming and Javascript";
+        
+        document.getElementById("demo").innerHTML=str1 + str2 +"<br>";   
+        document.getElementById("demo1").innerHTML=str3;   
+        
+        var result=str4.indexOf("Javascript");
+        document.getElementById("demo2").innerHTML=result;  
+        
+        var result1=str4.lastIndexOf("Javascript");
+        document.write(result1 + "<br>");
+        
+        document.write(str1.concat(str2) + "<br>");
+
+        document.write(str1.charAt(5) +"<br>");
+
+        document.write(str1.toLowerCase() + "<br>");
+
+        document.write(str2.toUpperCase() +"<br>");
+        /*slice() retrieves part of the string*/
+        var str5="     String       ";
+        var str6=str5.slice(2,6);
+        document.write(str6 +"<br>");
+        /*trim() removes white spaces*/
+        var str7=str5.trim();
+        document.write(str7 +"<br>");
+        var str8=str7.slice(2,6);
+        document.write(str8 +"<br>");
+        /*split()-applies a comma*/
+        var names="John Peter Sam";
+        document.write(names.split(" ")+"<br>");
+
+        for(var i=0;i<10;i++)
+            document.write(names[i]);
+        
+        document.write("<br>");
+        
+        /*for of loop - iterates through all the elements in the string/array*/
+
+        for(var a of names)
+            document.write(a);
+    </script>   
+</body>
+</html>
