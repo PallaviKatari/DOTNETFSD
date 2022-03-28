@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT EVENTS</title>
+</head>
+<body>
+    <button type="button" onclick="Message()">Click Me!!!</button>
+    <button type="button" ondblclick="Cube(2,3,4)">Calculate Cube</button>
+
+    <script>
+        //Default Function/Function with no parameters/arguements
+        function Message()
+        {
+            document.write("Welcome to Functions and Events Concept in JS");
+        }
+        //Function with 3 Parameters
+        function Cube(num1,num2,num3)
+        {
+            document.write(num1*num2*num3);
+        }
+
+    </script>
+</body>
+</html>
