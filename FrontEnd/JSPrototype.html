@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Prototype</title>
+</head>
+<body>
+    <pre style="font-size: large;">
+        -JS is a prototype based language
+        -Each object-prototype object
+        
+    </pre>
+    <script>
+        //function without prototype
+        function student()
+        {
+            studentid=200;
+            studentname="Peter";
+        }
+        var s=new student();
+        //new property (added to the object s)
+        s.marks=80;
+        document.write(s.marks+"<br>");
+        //When other objects are created they cannot access marks
+        var s1=new student();
+        document.write(s1.marks+"<br>");
+
+        //function emp
+        function emp()
+        {
+            this.empid=100;
+            this.empname="John";
+        }
+        //prototype- is automatically attached to the function
+        emp.prototype.designation="HR";
+        
+        //create an instance - constructor function - emp() - function is loaded in the memory
+        var empdetails=new emp();
+        document.write(empdetails.designation+"<br>");
+        emp.prototype={designation:"IT"};
+        var empdetails1=new emp();
+        document.write(empdetails1.designation+"<br>");
+        var empdetails2=new emp();
+        document.write(empdetails2.designation+"<br>");
+
+        emp.prototype.GetDetails=function()
+        {
+            //var empdetails3=new emp();
+           return this.empid + " " +this.empname +" "+ this.designation;
+            
+        }
+        const emp1=new emp();
+        document.write(emp1.GetDetails()+"<br>");
+    
+    </script>
+    
+</body>
+</html>
