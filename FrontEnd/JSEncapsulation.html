@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Encapsulation</title>
+</head>
+<body>
+    <h2>ENCAPSULATION-PROTOTYPE</h2>
+    <script>
+        function Employee(id,name)
+        {
+            var eid=id;
+            var ename=name;
+
+            //Encapsulation
+            Object.defineProperty
+            (
+                this,"name",
+                {
+                    get:function()
+                    {
+                        return ename;
+                    },
+                    set:function()
+                    {
+                        this.ename=ename;
+                    }
+            });
+            Object.defineProperty
+            (
+                this,"id",
+                {
+                    get:function()
+                    {
+                        return eid;
+                    },
+                    set:function()
+                    {
+                        this.eid=eid;
+                    }
+            });
+        }
+        var emp =new Employee(100,"John");
+        console.log(emp.id);
+        console.log(emp.name);
+    </script> 
+    <hr>
+    <h2>ENCAPSULATION-CLASSES</h2>  
+    <script>
+        class Student
+        {
+            constructor()
+            {
+                var id;
+                var name;
+            }
+            //Property for id
+            getID()
+            {
+                return this.id;
+            }
+            setID(id)
+            {
+                this.id=id;
+            }
+
+            //Property for name
+            getName()
+            {
+                return this.name;
+            }
+            setName(name)
+            {
+                this.name=name;
+            }
+
+        }
+        var s=new Student();
+        s.setID(101);
+        s.setName("Peter");
+        console.log(s.getID());
+        console.log(s.getName());
+    </script>
+</body>
+</html>

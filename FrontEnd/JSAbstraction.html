@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Abstraction</title>
+</head>
+<body>
+    <h2 style="text-align:center">ABSTRACTION USING CLASSES</h2>
+    <script>
+        //Abstract Class-cannot be directly called or invoked-cannot create an object 
+        class employee
+        {
+            //default constructor-no parameters
+            constructor()
+            {
+                if(this.constructor==employee)
+                {
+                    //Exception Handling
+                    throw new Error("Object for Abstract Class cannot be created");
+                }
+            }
+            //Cannot have function definition 
+            
+           //Polymorphism-Function Overriding
+            display()
+            {
+                throw new Error("Abstract function cannot have implementation");
+                //console.log("Employee Class"); 
+            }
+            //{
+
+            //}
+
+        }
+        //Implement the concept of Inheritance(Parent-Child)
+        class Manager extends employee
+        {
+            display()
+            {
+                //super.display();
+                console.log("Manager Class");
+            }
+        }
+        //Cannot access an abstract directly
+        //var emp=new employee();
+        var man=new Manager();
+        man.display();
+
+    </script>
+    <hr>
+    <h2>ABSTRACTION USING PROTOTYPE</h2>
+    <script>
+        //class employee1
+        //constructor 
+        function employee1()
+        {
+            this.id=100;
+            if(this.constructor==employee1)
+               //Exception Handling
+               throw new Error("Object for Abstract Class cannot be created");
+        };
+        employee1.prototype.display=function()
+        {
+            throw new Error("Abstract function cannot have implementation");
+            //return this.id;
+        }
+        //Derived manager1
+        //Derived constructor
+
+        function manager1(eid)
+        {
+            this.id=eid;
+        }
+        //var emp1=new employee1();
+        //Inheritance
+        //Derived
+        manager1.prototype=Object.create(employee1.prototype);
+        var man1=new manager1(100);
+        console.log(man1.display());
+    </script>    
+</body>
+</html>
