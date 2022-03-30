@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+      body{
+        background: #bdc3c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+    #car{
+      position: relative;
+      cursor: pointer;
+      height: 200px;
+      width: 200px;
+      top:120px;
+    }
+    #bullet{
+      position: relative;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+      top:0;
+    }
+  </style>
+</head>
+
+<body>
+<tr>
+    <th><img id="car" src="assets/gun.jpeg"></th>
+    <th><img id="bullet" src="assets/bullet.jpg"></th>
+</tr>
+  
+  <script>
+    bullet.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        bullet.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 5000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+
+
+</body>
+
+</html>
