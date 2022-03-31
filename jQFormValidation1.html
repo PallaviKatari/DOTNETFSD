@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--jQuery Validation Plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 20px 0;
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 1.25rem;
+            width: 300px;
+        }
+
+        form,
+        p {
+            margin: 20px;
+        }
+
+        p.note {
+            font-size: 14px;
+            color: red;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 4px;
+            font-family: 'Lato';
+            width: 300px;
+            margin-top: 10px;
+        }
+
+        label {
+            width: 300px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        label span {
+            font-size: 14px;
+        }
+
+        label.error {
+            color: red;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        input.error {
+            border: 1px dashed red;
+            font-weight: 300;
+            color: red;
+        }
+
+        [type="submit"],
+        [type="reset"],
+        button,
+        html [type="button"] {
+            margin-left: 0;
+            border-radius: 0;
+            background: black;
+            color: white;
+            border: none;
+            font-weight: 300;
+            padding: 10px 0;
+            line-height: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <pre>
+        Before we can start using the plugin in our fields, 
+        we have to include the necessary files in our project. 
+        There are two different files to include. The first is the core file, 
+        which includes the core features of the plugin, including everything 
+        from different validation methods to some custom selectors. 
+        The second file contains additional 
+        methods to validate inputs like credit card numbers and US-based phone numbers.
+    </pre>
+    <form id="basic-form" action="" method="post">
+        <p>
+            <label for="name">Name <span>(required, at least 3 characters)</span></label>
+            <input id="name" name="name" minlength="3" type="text" required>
+        </p>
+        <p>
+            <label for="email">E-Mail <span>(required)</span></label>
+            <input id="email" type="email" name="email" required>
+        </p>
+        <p>
+            <input class="submit" type="submit" value="SUBMIT">
+        </p>
+    </form>
+    <script>
+        $(document).ready(function () {
+            $("#basic-form").validate(
+                {
+                    rules: {
+                        name: {
+                            required: true,
+                            minlength: 3
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        }
+                    }
+                });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta charset="utf-8" />
+<title>JQuery Callback Function</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>       button {
+background: #33b0ff;
+border: 1px black dashed;
+font-size: 15px;
+padding: 10px;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+$("button").click(function() {
+$("h2").slideToggle("slow", function callback() {
+$("#hide").text("Show");
+// alert is defined inside the callback
+alert("This is Callback");
+});
+});
+});
+</script>
+</head>
+<body>
+<h2>Callback function</h2>
+<button id="hide" type="button">Hide</button>
+</body>
+</html>
