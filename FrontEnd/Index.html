@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,71 +11,71 @@
     <!--Internal Stylesheet-->
     <style>
         body::after {
-  content: "";
-  background: url("assets/IMG1.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  background-size: cover;
-  background-attachment: fixed;
-}
-       
-        h6
-        {
+            content: "";
+            background: url("assets/IMG1.jpg");
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h6 {
             text-align: right;
             background-color: blue;
-            color:aliceblue;
+            color: aliceblue;
             text-decoration: underline;
             font-size: larger;
         }
-        li
-        {
+
+        li {
             color: blue;
             font-size: large;
         }
-        pre
-        {
+
+        pre {
             background-color: beige;
             color: brown;
-            
+
         }
-        table
-        {
+
+        table {
             width: 100%;
         }
-        th
-        {
+
+        th {
             height: 25px;
             padding: 10px;
             text-align: center;
             font-size: 15px;
             color: blue;
         }
-        tr:nth-child(even)
-        {
+
+        tr:nth-child(even) {
             background-color: antiquewhite;
             color: brown;
         }
-        tr:nth-child(odd)
-        {
+
+        tr:nth-child(odd) {
             background-color: rgb(215, 221, 250);
             color: brown;
         }
-        tr:hover
-        {
-            background-color:chartreuse;
+
+        tr:hover {
+            background-color: chartreuse;
             color: rgb(255, 123, 0);
         }
-
     </style>
 </head>
+
 <body>
     <!--Inline Stylesheet-->
-    <h1 style="background-color:aqua;text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">WELCOME TO HTML TAGS</h1>
+    <h1 style="background-color:aqua;text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">WELCOME
+        TO HTML TAGS</h1>
     <h6>HYPERTEXT MARKUP LANGUAGE</h6>
     <hr>
     <pre>Hi all,
@@ -86,7 +87,9 @@
         xyz
     </pre>
     <!--Block level element-->
-    <p style="background-color: beige;">Lorem <b>ipsum dolor sit amet</b>, <i>consectetur</i> adipisicing elit. <mark>Consequatur accusantium</mark> soluta consequuntur quibusdam fugit dolorum, porro praesentium aut excepturi eius beatae quaerat cupiditate itaque perferendis aliquid minus velit possimus reprehenderit.</p>
+    <p style="background-color: beige;">Lorem <b>ipsum dolor sit amet</b>, <i>consectetur</i> adipisicing elit.
+        <mark>Consequatur accusantium</mark> soluta consequuntur quibusdam fugit dolorum, porro praesentium aut
+        excepturi eius beatae quaerat cupiditate itaque perferendis aliquid minus velit possimus reprehenderit.</p>
     <p>x<sub>2</sub></p>
     <p>x<sup>2</sup></p>
     <!--Inline level element-->
@@ -103,7 +106,7 @@
     &#128512;&#128516;
     <!--LISTS-->
     <!--ordered,unordered,definition list-->
-    <ol type="I">
+    <ol type="I" start="3">
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
@@ -152,37 +155,88 @@
     <br>
     <a href="https://www.google.com/webhp?igu=1" target="google" title="Google Search engine">Google</a>
 
-<!--TABLES-->
-<table border="1">
-    <caption>Trainee Details</caption>
-    <thead>
-        <tr><th>TID</th><th>TName</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>100</td><td>John</td></tr>
-        <tr><td>101</td><td>Sam</td></tr>
-        <tr><td>102</td><td>Peter</td></tr>
-        <tr><td>103</td><td>Jancy</td></tr>
-        <tr><td>104</td><td>Nancy</td></tr>
-        <tr><td>105</td><td>Jack</td></tr>
-    </tbody>
-</table>
+    <!--TABLES-->
+    <table border="1">
+        <caption>Trainee Details</caption>
+        <thead>
+            <tr>
+                <th>TID</th>
+                <th>TName</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>John</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Sam</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Peter</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Jancy</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Nancy</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Jack</td>
+            </tr>
+        </tbody>
+    </table>
 
-<!--colspan in tables-->
-<table border="1">
-    <tr><th>ID</th><th>Name</th><th colspan="2">Mobile</th></tr>
-    <tr><td>100</td><td>John</td><td>945983649</td><td>945983649</td></tr>
-    <tr><td>101</td><td>Peter</td><td>945983649</td></tr>
-    <tr><td>102</td><td>Jancy</td><td>945983649</td><td>945983649</td></tr>
+    <!--colspan in tables-->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th colspan="2">Mobile</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>John</td>
+            <td>945983649</td>
+            <td>945983649</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Peter</td>
+            <td>945983649</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Jancy</td>
+            <td>945983649</td>
+            <td>945983649</td>
+        </tr>
 
-</table>
+    </table>
 
-<!--tables with rowspan-->
-<table border="1">
-    <tr><th>ID</th><td>100</td><td>101</td></tr>
-    <tr><th rowspan="2">Mobile</th><td>987654783</td><td>987654783</td></tr>
-    <tr><td>9637546728</td><td>987654783</td></tr>
-</table>
+    <!--tables with rowspan-->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <td>100</td>
+            <td>101</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Mobile</th>
+            <td>987654783</td>
+            <td>987654783</td>
+        </tr>
+        <tr>
+            <td>9637546728</td>
+            <td>987654783</td>
+        </tr>
+    </table>
+    <hr>
 </body>
-</html>
 
+</html>

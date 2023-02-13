@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://www.cgvakindia.com/" target="_blank">
     <title>Registration Form</title>
 </head>
+
 <body>
+    <a href="company/#overview">Overview</a><br>
+    <a href="blog/">Blog</a><br>
+    <a href="company/#management">Management</a><br>
+     <hr>
     <h1 style="text-align: center;">Registration Form</h1>
-    <form action="" method="Post">
+    <form action="https://www.cgvakindia.com/" method="get">
         <fieldset>
             <legend>
                 Trainee Details
@@ -33,10 +40,10 @@
                 <optgroup label="DATABASE">
                     <option>SQL</option>
                     <option>ORACLE</option>
-                </optgroup>                
+                </optgroup>
             </select><br><br>
             <br>
-            <input type="submit" value="Register">       
+            <input type="submit" value="Register">
         </fieldset>
     </form>
 
@@ -58,6 +65,26 @@
         <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
         <input type="submit" value="Submit">
     </form>
-    
+    <hr>
+    <label>
+        Enter your favorite Technology: Press any character<br />
+        <input type="text" id="Tech" list="Technologies">
+        <datalist id="Technologies">
+            <option value="Angular">
+            <option value="React">
+            <option value="Vue">
+            <option value="Next">
+            <option value="Node">
+            <option value="Ember">
+            <option value="Javascript">
+            <option value="Java">
+            <option value="CSharp">
+            <option value="Blazor">
+            <option value="Selenium">
+            <option value="Playwright">
+        </datalist>
+    </label>
+
 </body>
+
 </html>
